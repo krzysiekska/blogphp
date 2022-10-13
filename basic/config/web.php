@@ -42,14 +42,16 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'article/<action: (index|update|create|delete)>' => 'article/<action>',
+                'article/<slug>' => 'article/viev'
             ],
         ],
-        */
+
     ],
     'params' => $params,
 ];
