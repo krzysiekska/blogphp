@@ -7,6 +7,7 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'defaultRoute' => 'article/index',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -46,10 +47,10 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
+            /*'rules' => [
                 'article/<action: (index|update|create|delete)>' => 'article/<action>',
-                'article/<slug>' => 'article/viev'
-            ],
+                'article/<slug>' => 'article/view'
+            ],*/
         ],
 
     ],

@@ -8,4 +8,10 @@
     <div>
         <?php echo \yii\helpers\StringHelper::truncateWords(($model->getEncodeBody()), 40)  ?>
     </div>
+    <p class="text-muted text-right">
+        <small>
+            Created At: <b><?php echo Yii::$app->formatter->asDatetime($model->created_at); //asRelativeTime ile czasu temu ?></b>
+            By: <b><?php echo $model->createdBy->username; //asRelativeTime ile czasu temu ?></b>
+        </small>
+    </p>
 </div>
